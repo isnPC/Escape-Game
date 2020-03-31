@@ -1,0 +1,54 @@
+body
+{
+	background-image: url("fond.jpg");
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.titre
+{
+	font-family: "Trebuchet MS";
+	color: #383838;
+	font-size: 3vw;
+	border: 2px black solid;
+	border-radius: 70px / 70px;
+	box-shadow: 6px 6px 15px white;
+	text-shadow: 3px 3px 10px black;
+	text-align: center;
+	background-image:radial-gradient(white, black);
+	padding:8px;
+}
+
+.synopsis
+{
+	font-family: "Trebuchet MS";
+	color: #343434;
+	font-size: 2.5vw;
+	text-shadow: 3px 3px 10px white;
+	text-align: center;
+	margin-top: 7vw;
+	text-decoration: underline #343434; 
+}
+
+.explications
+{
+	font-family: "Trebuchet MS";
+	font-size: 1.5vw;
+	text-align: center;
+	margin-top: 5vw;
+    background: -webkit-gradient(linear, left top, left bottom, from(grey), to(#D5D5D5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jeu
+{
+	font-family: "Trebuchet MS";
+	color: #343434;
+	font-size: 2.5vw;
+	text-shadow: 3px 3px 10px white;
+	text-align: center;
+	margin-top: 7vw;
+	text-decoration: underline #343434; 
+}
