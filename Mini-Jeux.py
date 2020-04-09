@@ -29,8 +29,8 @@ objet3 = pygame.Rect(10,155,25,25)
 pygame.draw.rect(screen, red, objet3, 5)
 pygame.display.flip()
 
-"""arrivée = pygame.image.load("arrivée.jpg")
-arrivée.convert()"""
+arrivée = pygame.image.load("arrivée.jpg")
+arrivée.convert()
 
 #Bouton de controle de la fenetre
 launched = True
@@ -41,6 +41,8 @@ while launched and not objet1.colliderect(objet2):
     pygame.draw.rect(screen, white, objet1, 5)
     pygame.draw.rect(screen, black, objet2)
     pygame.draw.rect(screen, red, objet3, 5)
+    screen.blit(arrivée, [10, 300])
+    screen.blit(ParaTitre, [20,80])
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             launched = False
