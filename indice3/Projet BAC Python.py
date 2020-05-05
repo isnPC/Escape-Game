@@ -45,101 +45,101 @@ Score = pygame.font.SysFont("arial", 25, True)
 # ---------------------------------Musique--------------------------------------
 
 
-estomac = pygame.mixer.Sound("indice3_estomac.wav")
+estomac = pygame.mixer.Sound("estomac.wav")
 
-punch = pygame.mixer.Sound("indice3_punch.wav")
+punch = pygame.mixer.Sound("punch.wav")
 
-rire = pygame.mixer.Sound("indice3_rire.wav")
+rire = pygame.mixer.Sound("rire.wav")
 
-attente = pygame.mixer.Sound("indice3_attente.wav")
+attente = pygame.mixer.Sound("attente.wav")
 
-pacman = pygame.mixer.Sound("indice3_pacman.wav")
+pacman = pygame.mixer.Sound("pacman.wav")
 
-deplacement1 = pygame.mixer.Sound("indice3_deplacement.wav")
+deplacement1 = pygame.mixer.Sound("deplacement.wav")
 
 # ----------------------------------Image---------------------------------------
 
 
-borne = pygame.image.load("indice3_borne.png")
+borne = pygame.image.load("borne.png")
 borne.convert()
 
-fond1 = pygame.image.load("indice3_fond1.jpg")
+fond1 = pygame.image.load("fond1.jpg")
 fond1.convert()
 
-fond2 = pygame.image.load("indice3_arcade_fond.jpg")
+fond2 = pygame.image.load("arcade_fond.jpg")
 fond2.convert()
 
-fond3 = pygame.image.load("indice3_fond3.jpg")
+fond3 = pygame.image.load("fond3.jpg")
 fond3.convert()
 
-deco1 = pygame.image.load("indice3_deco1.jpg")
+deco1 = pygame.image.load("deco1.jpg")
 deco1.convert()
 
-deco2 = pygame.image.load("indice3_deco2.jpg")
+deco2 = pygame.image.load("deco2.jpg")
 deco2.convert()
 
-deco3 = pygame.image.load("indice3_deco3.jpg")
+deco3 = pygame.image.load("deco3.jpg")
 deco3.convert()
 
-deco4 = pygame.image.load("indice3_deco4.jpg")
+deco4 = pygame.image.load("deco4.jpg")
 deco4.convert()
 
-sol = pygame.image.load("indice3_sol.jpg")
+sol = pygame.image.load("sol.jpg")
 sol.convert()
 
-bouton_start = pygame.image.load("indice3_bouton_start.png")
+bouton_start = pygame.image.load("bouton_start.png")
 bouton_start.convert()
 
-ecran1 = pygame.image.load("indice3_ecran1.png")
+ecran1 = pygame.image.load("ecran1.png")
 ecran1.convert()
 
-ecran2 = pygame.image.load("indice3_ecran2.png")
+ecran2 = pygame.image.load("ecran2.png")
 ecran2.convert()
 
-ecran3 = pygame.image.load("indice3_ecran3.png")
+ecran3 = pygame.image.load("ecran3.png")
 ecran3.convert()
 
-borne_contour = pygame.image.load("indice3_contour_borne.png")
+borne_contour = pygame.image.load("contour_borne.png")
 borne_contour.convert()
 
-panel = pygame.image.load("indice3_panel3.png")
+panel = pygame.image.load("panel3.png")
 panel.convert()
 
-top = pygame.image.load("indice3_top.jpg")
+top = pygame.image.load("top.jpg")
 top.convert()
 
-cadre = pygame.image.load("indice3_cadre.png")
+cadre = pygame.image.load("cadre.png")
 cadre.convert()
 
-cadre2 = pygame.image.load("indice3_cadre2.png")
+cadre2 = pygame.image.load("cadre2.png")
 cadre2.convert()
 
-carte = pygame.image.load("indice3_carte.png")
+carte = pygame.image.load("carte.png")
 carte.convert()
 
-boite = pygame.image.load("indice3_boite.jpg")
+boite = pygame.image.load("boite.jpg")
 boite.convert()
 
-stickers = pygame.image.load("indice3_stickers.png")
+stickers = pygame.image.load("stickers.png")
 stickers.convert()
 
-pizza = pygame.image.load("indice3_pizza.png")
+pizza = pygame.image.load("pizza.png")
 pizza.convert()
 pizza_rect = pizza.get_rect(center=(random.randrange(700, 1500, deplacement), random.randrange(130, 600, deplacement)))
 
-perso = pygame.image.load("indice3_perso.png")
+perso = pygame.image.load("perso.png")
 perso.convert()
 perso_rect = perso.get_rect(center=(100,position_tireY))
 
-fantome = pygame.image.load("indice3_fantome.png")
+fantome = pygame.image.load("fantome.png")
 fantome.convert()
 fantome_rect = fantome.get_rect(center=(random.randrange(700, 1000, deplacement), random.randrange(130, 600, deplacement)))
 
-rond = pygame.image.load("indice3_rond.png")
+rond = pygame.image.load("rond.png")
 rond.convert()
 rond_rect = rond.get_rect(center=(140,perso_rect.y + 30))
 
-camion = pygame.image.load("indice3_camion.png")
+camion = pygame.image.load("camion.png")
 camion.convert()
 camion_rect = camion.get_rect(center=(random.randrange(700, 3000, deplacement), random.randrange(130, 600, deplacement)))
 
@@ -336,4 +336,4 @@ def victoire():
 
 
 etape1()
-pygame.quit
+pygame.quit()

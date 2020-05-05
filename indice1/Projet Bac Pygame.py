@@ -50,13 +50,13 @@ Indice1 = pygame.font.SysFont("arial", 30, True)
 
 # ---------------------------------Musique--------------------------------------
 
-Bruit_De_Voiture = pygame.mixer.Sound("indice1_bruit de voiture.wav")
+Bruit_De_Voiture = pygame.mixer.Sound("bruit de voiture.wav")
 
-Klaxon = pygame.mixer.Sound("indice1_klaxon.wav")
+Klaxon = pygame.mixer.Sound("klaxon.wav")
 
-Bruit_applaudissement = pygame.mixer.Sound("indice1_applaudissement.wav")
+Bruit_applaudissement = pygame.mixer.Sound("applaudissement.wav")
 
-Bruit_de_crash = pygame.mixer.Sound("indice1_crache.wav")
+Bruit_de_crash = pygame.mixer.Sound("crache.wav")
 
 # ----------------------------------objet---------------------------------------
 
@@ -107,58 +107,58 @@ pygame.display.flip()
 
 # ----------------------------------Image---------------------------------------
 
-route = pygame.image.load("indice1_route.png")
+route = pygame.image.load("route.png")
 route.convert()
 
-arrivee = pygame.image.load("indice1_arrivee.jpg")
+arrivee = pygame.image.load("arrivee.jpg")
 arrivee.convert()
 arrivee_rect= arrivee.get_rect(center=(830,347))
 
-voiture1 = pygame.image.load("indice1_voiture1.png")
+voiture1 = pygame.image.load("voiture1.png")
 voiture1.convert()
 voiture1_rect = voiture1.get_rect(center=(70,217))
 
-voiture2 = pygame.image.load("indice1_voiture2.png")
+voiture2 = pygame.image.load("voiture2.png")
 voiture2.convert()
 voiture2_rect = voiture2.get_rect(center=(70,497))
 
-voiture3 = pygame.image.load("indice1_voiture3.jpg")
+voiture3 = pygame.image.load("voiture3.jpg")
 voiture3.convert()
 
-voiture4 = pygame.image.load("indice1_voiture4.jpg")
+voiture4 = pygame.image.load("voiture4.jpg")
 voiture4.convert()
 
-tete_de_mort = pygame.image.load("indice1_tete de mort.jpg")
+tete_de_mort = pygame.image.load("tete de mort.jpg")
 tete_de_mort.convert()
 
-victoire_fond = pygame.image.load("indice1_victoire_fond.jpg")
+victoire_fond = pygame.image.load("victoire_fond.jpg")
 victoire_fond.convert()
 
-cadre = pygame.image.load("indice1_cadre.png")
+cadre = pygame.image.load("cadre.png")
 cadre.convert()
 
-fond = pygame.image.load("indice1_fond.jpg")
+fond = pygame.image.load("fond.jpg")
 fond.convert()
 
-fond2 = pygame.image.load("indice1_fond2.jpg")
+fond2 = pygame.image.load("fond2.jpg")
 fond2.convert()
 
-croix = pygame.image.load("indice1_croix.png")
+croix = pygame.image.load("croix.png")
 croix.convert()
 
-dossier = pygame.image.load("indice1_dossier.png")
+dossier = pygame.image.load("dossier.png")
 dossier.convert()
 
-ecran_ordi = pygame.image.load("indice1_ecran_ordi.png")
+ecran_ordi = pygame.image.load("ecran_ordi.png")
 ecran_ordi.convert()
 
-ecran_contour = pygame.image.load("indice1_ecran_contour.png")
+ecran_contour = pygame.image.load("ecran_contour.png")
 ecran_contour.convert()
 
-mur = pygame.image.load("indice1_mur.jpg")
+mur = pygame.image.load("mur.jpg")
 mur.convert()
 
-table = pygame.image.load("indice1_table.png")
+table = pygame.image.load("table.png")
 table.convert()
 
 
