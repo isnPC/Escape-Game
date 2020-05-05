@@ -32,9 +32,9 @@ Indice2 = pygame.font.SysFont("arial", 30, True)
 # ---------------------------------Musique--------------------------------------
 
 
-alarme = pygame.mixer.Sound("indice2_alarme.wav")
+alarme = pygame.mixer.Sound("alarme.wav")
 
-Bruit_applaudissement = pygame.mixer.Sound("indice1_applaudissement.wav")
+Bruit_applaudissement = pygame.mixer.Sound("../indice1/applaudissement.wav")
 
 
 # ----------------------------------objet---------------------------------------
@@ -46,83 +46,83 @@ pygame.display.flip()
 # ----------------------------------Image---------------------------------------
 
 
-code = pygame.image.load("indice2_code_fond.jpg")
+code = pygame.image.load("code_fond.jpg")
 code.convert()
 
-table_feuille_avant1 = pygame.image.load("Indice2_table_feuille_avant1.png")
+table_feuille_avant1 = pygame.image.load("table_feuille_avant1.png")
 table_feuille_avant1.convert()
 
-table_feuille_avant2 = pygame.image.load("Indice2_table_feuille_avant2.png")
+table_feuille_avant2 = pygame.image.load("table_feuille_avant2.png")
 table_feuille_avant2.convert()
 
-table_feuille_arriere2 = pygame.image.load("Indice2_table_feuille_arriere2.png")
+table_feuille_arriere2 = pygame.image.load("table_feuille_arriere2.png")
 table_feuille_arriere2.convert()
 
-fleche_gauche = pygame.image.load("indice2_fleche_gauche.jpg")
+fleche_gauche = pygame.image.load("fleche_gauche.jpg")
 fleche_gauche.convert()
 
-fleche_droite = pygame.image.load("indice2_fleche_droite.jpg")
+fleche_droite = pygame.image.load("fleche_droite.jpg")
 fleche_droite.convert()
 
-fleche_droite = pygame.image.load("indice2_fleche_droite.jpg")
+fleche_droite = pygame.image.load("fleche_droite.jpg")
 fleche_droite.convert()
 
-bouton = pygame.image.load("indice2_bouton.png")
+bouton = pygame.image.load("bouton.png")
 bouton.convert()
 
-tableau = pygame.image.load("indice2_tableau.png")
+tableau = pygame.image.load("tableau.png")
 tableau.convert()
 
-crayon = pygame.image.load("indice2_crayon.jpg")
+crayon = pygame.image.load("crayon.jpg")
 crayon.convert()
 
-chiffre_rouge = pygame.image.load("indice2_chiffre_rouge.png")
+chiffre_rouge = pygame.image.load("chiffre_rouge.png")
 chiffre_rouge.convert()
 
-chiffre_vert = pygame.image.load("indice2_chiffre_vert.png")
+chiffre_vert = pygame.image.load("chiffre_vert.png")
 chiffre_vert.convert()
 
 
-ecran = pygame.image.load("indice2_ecran.jpg")
+ecran = pygame.image.load("ecran.jpg")
 ecran.convert()
 
-fond = pygame.image.load("indice2_parquet.jpg")
+fond = pygame.image.load("parquet.jpg")
 fond.convert()
 
-croix = pygame.image.load("indice2_croix.png")
+croix = pygame.image.load("croix.png")
 croix.convert()
 
-post_it = pygame.image.load("indice2_post_it.jpg")
+post_it = pygame.image.load("post_it.jpg")
 post_it.convert()
 
-scotch = pygame.image.load("indice2_scotch.png")
+scotch = pygame.image.load("scotch.png")
 scotch.convert()
 
-quatre = pygame.image.load("indice2_quatre.png")
+quatre = pygame.image.load("quatre.png")
 quatre.convert()
 
-cinq = pygame.image.load("indice2_cinq.jpg")
+cinq = pygame.image.load("cinq.jpg")
 cinq.convert()
 
-deux = pygame.image.load("indice2_deux.jpg")
+deux = pygame.image.load("deux.jpg")
 deux.convert()
 
-huit = pygame.image.load("indice2_huit.jpg")
+huit = pygame.image.load("huit.jpg")
 huit.convert()
 
-coffre = pygame.image.load("indice2_coffre.png")
+coffre = pygame.image.load("coffre.png")
 coffre.convert()
 
-coffre_ouvert = pygame.image.load("indice2_coffre_ouvert.png")
+coffre_ouvert = pygame.image.load("coffre_ouvert.png")
 coffre_ouvert.convert()
 
-h = pygame.image.load("indice2_h.png")
+h = pygame.image.load("h.png")
 h.convert()
 
-H = pygame.image.load("indice2_H.jpg")
+H = pygame.image.load("H.jpg")
 H.convert()
 
-cle = pygame.image.load("indice2_cle.png")
+cle = pygame.image.load("cle.png")
 cle.convert()
 
 
@@ -500,7 +500,7 @@ def gagner():
         pygame.display.flip()
 
 etape1()
-pygame.quit
+pygame.quit()
 
 
 
