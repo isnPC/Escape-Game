@@ -155,11 +155,8 @@ ecran_ordi.convert()
 ecran_contour = pygame.image.load("ecran_contour.png")
 ecran_contour.convert()
 
-mur = pygame.image.load("mur.jpg")
-mur.convert()
-
-table = pygame.image.load("table.png")
-table.convert()
+last = pygame.image.load("last.png")
+last.convert()
 
 
 # ---------------------------------Fonction-------------------------------------
@@ -168,17 +165,17 @@ def ordinateur():
     ordi = True
     while ordi:
         screen.fill(white)
-        screen.blit(mur,(0,0))
-        screen.blit(cadre,(135,47))
-        screen.blit(table,(45,497))
-        screen.blit(ecran_ordi,(245,260))
-        screen.blit(dossier,(405,347))
+        screen.blit(last,(0,0))
+        screen.blit(ecran_ordi,(280,320))
+        screen.blit(cadre,(297,370))
+        screen.blit(dossier,(413,411))
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mx,my = pygame.mouse.get_pos()
-                if 418 < mx < 481 and 349 < my < 435:
+                print(mx,my)
+                if 419 < mx < 463 and 410 < my < 470:
                     ordi = False
                     Menu()
 

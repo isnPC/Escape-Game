@@ -26,7 +26,7 @@ arcade1 = pygame.display.set_mode((screen_width1, screen_height1))
 
 arcade2 = pygame.display.set_mode((screen_width2, screen_height2))
 
-deplacement = 3
+deplacement = 10
 
 FPS = 30
 
@@ -63,14 +63,14 @@ deplacement1 = pygame.mixer.Sound("deplacement.wav")
 borne = pygame.image.load("borne.png")
 borne.convert()
 
-fond1 = pygame.image.load("fond1.jpg")
-fond1.convert()
-
-fond2 = pygame.image.load("arcade_fond.jpg")
+fond2 = pygame.image.load("fond2.jpg")
 fond2.convert()
 
 fond3 = pygame.image.load("fond3.jpg")
 fond3.convert()
+
+fond4 = pygame.image.load("fond4.png")
+fond4.convert()
 
 deco1 = pygame.image.load("deco1.jpg")
 deco1.convert()
@@ -83,9 +83,6 @@ deco3.convert()
 
 deco4 = pygame.image.load("deco4.jpg")
 deco4.convert()
-
-sol = pygame.image.load("sol.jpg")
-sol.convert()
 
 bouton_start = pygame.image.load("bouton_start.png")
 bouton_start.convert()
@@ -102,7 +99,7 @@ ecran3.convert()
 borne_contour = pygame.image.load("contour_borne.png")
 borne_contour.convert()
 
-panel = pygame.image.load("panel3.png")
+panel = pygame.image.load("panel.png")
 panel.convert()
 
 top = pygame.image.load("top.jpg")
@@ -143,6 +140,9 @@ camion = pygame.image.load("camion.png")
 camion.convert()
 camion_rect = camion.get_rect(center=(random.randrange(700, 3000, deplacement), random.randrange(130, 600, deplacement)))
 
+prise = pygame.image.load("prise.png")
+prise.convert()
+
 # ---------------------------------Fonction-------------------------------------
 
 # Page d'acceuil et démarage du jeu
@@ -150,8 +150,8 @@ def etape1():
     continuer1 = True
     while continuer1:
         arcade1.fill(white)
-        arcade1.blit(fond1,(0,0))
-        arcade1.blit(sol,(0,650))
+        arcade1.blit(fond4,(0,0))
+        arcade1.blit(prise,(450,500))
         arcade1.blit(borne,(128,0))
         arcade1.blit(ecran1,(221,160))
         arcade1.blit(deco1,(10,10))
@@ -310,9 +310,9 @@ def victoire():
     continuer1 = True
     while continuer1:
         arcade1.fill(white)
-        arcade1.blit(fond1,(0,0))
-        arcade1.blit(sol,(0,650))
+        arcade1.blit(last,(0,0))
         arcade1.blit(borne,(128,0))
+        arcade1.blit(prise,(450,500))
         arcade1.blit(ecran1,(221,160))
         arcade1.blit(deco1,(10,10))
         arcade1.blit(deco2,(510,150))
