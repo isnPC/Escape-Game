@@ -88,6 +88,10 @@ deco3.convert()
 deco4 = pygame.image.load("deco4.png")
 deco4.convert()
 
+prise3 = pygame.image.load("PP_prise3.png")
+prise3.convert()
+prise3_rect = prise3.get_rect(center = (308,520))
+
 
 # ---------------------------------Fonction-------------------------------------
 
@@ -98,9 +102,9 @@ def Piece():
     objet = 0
     piece = 0
     test = 0
+    screen.fill(white)
     while jeu:
         if piece == 0:
-            screen.fill(white)
             screen.blit(piece1,(0,0))
             screen.blit(fleche2,(740,275))
             for event in pygame.event.get():
@@ -115,8 +119,8 @@ def Piece():
 
 
         elif piece == 1:
-            screen.fill(white)
             screen.blit(piece2,(0,0))
+            screen.blit(prise3,prise3_rect)
             screen.blit(borne,(87,175))
             screen.blit(deco1,(3,160))
             screen.blit(deco2,(275,235))
@@ -140,10 +144,11 @@ def Piece():
                         piece +=1
                     elif 268 < mx < 298 and 394 < my < 418:
                         test = 1
+                        prise3_rect.x -= 1000
+                        prise3_rect.y -= 1000
             pygame.display.flip()
 
         elif piece == 2:
-            screen.fill(white)
             screen.blit(piece3,(0,0))
             screen.blit(fleche1,(10,275))
             screen.blit(porte,(730,50))
@@ -164,7 +169,6 @@ def Piece():
             pygame.display.flip()
 
         elif piece == 3:
-            screen.fill(white)
             screen.blit(piece4,(0,0))
             screen.blit(fleche3,(385,540))
             for event in pygame.event.get():
@@ -178,8 +182,6 @@ def Piece():
             pygame.display.flip()
 
         elif piece == 4:
-
-            screen.fill(white)
             screen.blit(piece5,(0,0))
             screen.blit(fleche1,(10,275))
             screen.blit(ppecran,(363,288))
