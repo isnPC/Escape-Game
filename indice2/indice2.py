@@ -1,24 +1,6 @@
-import pygame
-import time
-import sys
-
-pygame.init()
-
-# ------------------------Taille fenetre et couleur-----------------------------
-screen_width = 800
-screen_height = 600
-grey = (96,96,96)
-white = (255,255,255)
-black = (0,0,0)
-red = (255,0,0)
-blue = (0,0,255)
-green = (0,255,0)
-orange = (255,100,0)
-jaune = (255,255,0)
 
 table = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
 
-gagner = pygame.display.set_mode((screen_width, screen_height), pygame.RESIZABLE)
 
 
 
@@ -499,8 +481,6 @@ def gagner():
 
         pygame.display.flip()
 
-etape1()
-pygame.quit()
 
 
 
