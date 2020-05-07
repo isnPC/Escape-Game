@@ -120,7 +120,6 @@ def Piece():
 
         elif piece == 1:
             screen.blit(piece2,(0,0))
-            screen.blit(prise3,prise3_rect)
             screen.blit(borne,(87,175))
             screen.blit(deco1,(3,160))
             screen.blit(deco2,(275,235))
@@ -132,6 +131,8 @@ def Piece():
             if test == 1:
                 screen.blit(prise,(250,392))
                 pygame.display.flip()
+            else:
+                screen.blit(prise3,prise3_rect)
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -144,8 +145,6 @@ def Piece():
                         piece +=1
                     elif 268 < mx < 298 and 394 < my < 418:
                         test = 1
-                        prise3_rect.x -= 1000
-                        prise3_rect.y -= 1000
             pygame.display.flip()
 
         elif piece == 2:
